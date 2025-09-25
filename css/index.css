@@ -7,6 +7,7 @@
 html {
 
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -48,8 +49,10 @@ h2 {
 /* header */
 header {
     background: #4e2a84;
-
+    position: fixed;
     padding: 20px 0px;
+    width: 100%;
+    z-index: 9999;
 }
 
 
@@ -216,7 +219,7 @@ header {
 
 /* service */
 .service {
-    background-image: url("./img/s1.jpg");
+    background-image: url("../img/s1.jpg");
     background-size: cover;
     text-align: center;
     padding: 70px 0px;
@@ -693,4 +696,36 @@ footer {
     font-weight: 700;
     margin-bottom: 24px;
     font-size: 0.875rem;
+}
+
+.backToTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.backToTop i {
+    color: blue;
+    border: 2px solid blue;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    /* transform: translateX(20px); */
+}
+
+.cd-top--is-visible {
+    /* // back-to-top button visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    /* // reduce button opacity if user keeps scrolling */
+    opacity: .5;
 }
