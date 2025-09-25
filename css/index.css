@@ -478,7 +478,7 @@ header {
 
 .feedback {
     text-align: center;
-    background-image: url("./img/cc1.jpg");
+    background-image: url("../img/cc1.jpg");
     background-size: cover;
     padding: 70px 0px;
 }
